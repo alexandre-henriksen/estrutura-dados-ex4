@@ -84,9 +84,9 @@ def main():
 
         capacidade, pesos, valores = preparar_dados(texto)
 
-        valor_max, k = knapsack(pesos, valores, M)
+        valor_max, k = knapsack(pesos, valores, capacidade)
 
-        itens = recuperar_itens(k, pesos, M)
+        itens = recuperar_itens(k, pesos, capacidade)
 
         print("Valor máximo:", )
         print("Itens escolhidos (índices):", itens)
@@ -103,4 +103,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-knapsack, recuperar_itens
